@@ -1,9 +1,14 @@
 body{
-    /*background-color: black !important;*/
+    background-image: url(../images/background.jpg);
+}
+
+.row{
+    background: #FFF5EE !important;
 }
 
 #title-container{
     text-align: center;
+    padding: 0;
 }
 
 #image-title{
@@ -12,7 +17,79 @@ body{
     margin-bottom: 5%;
 }
 
+#image-side{
+    float: left;
+    width: 20%;
+    height: 768px;
+}
+
 #text-get-started{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: gray;
+    padding-left: 3%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#text-wins{
+    margin-top: 8%;
+    float: right;
+    color: gray;
+    clear: both;
+    padding-right: 1%;
+    font-weight: bold;
+}
+
+#text-guesses{
+    float: right;
+    color: gray;
+    clear: both;
+    padding-right: 1%;
+    font-weight: bold;
+}
+
+#text-guesses-remaining{
+    float: right;
+    color: gray;
+    clear: both;
+    padding-right: 1%;
+    font-weight: bold;
+}
+
+#letters-container{
+    display: inline-block;
+    padding: 5% 15%;
+    align-content: center;
+    width: 50%;
+    position: relative;
+    text-align: center;
+}
+
+.letter{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 2%;
+    border-bottom: solid gray 1px;
+    width: 10%;
+    text-align: center;
+    color: gray;
+    align-content: center;
+    font-weight: bold;
+}
+
+#letters-guessed-title{
+    color: gray;
+    text-align: center;
+    padding: 2% 8%;
+    margin: 5% 20% 0% 20%;
+    border-bottom: dashed gray 1px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#letters-guessed{
+    text-align: center;
+    color: gray;
+    margin-bottom: 2%;
+    padding-top: 5%;
 }

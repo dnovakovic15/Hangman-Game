@@ -2,8 +2,11 @@
 <html lang="english">
 
     <head>
+         <!--jQuery Import-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
         <!--Link to local javascript and css-->
-        <script src="assets/javascript/game.js"></script>
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
         <link rel="stylesheet" href="assets/css/style.css">
 
         <!-- Added link to the jQuery Library -->
@@ -13,22 +16,35 @@
 
         <!-- Added a link to Bootstrap-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-
     </head>
 
     <body>
+        <!--<img id="image-side" src="assets/images/GoT_side.jpg">-->
+
         <div class="container">
             <div class="row">
                 <div class="col" id="title-container">
                     <img id="image-title" src="assets/images/GoT_title.jpg">
                     <span id="text-get-started"> PRESS ANY KEY TO GET STARTED!</span>
+                    <span id="text-wins"> Wins: 0</span>
+                    <span id="text-guesses"> Guesses: 0</span>
+                    <span id="text-guesses-remaining"> Guesses Remaining: 0</span>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col" id="title-container">
-                    <img id="image-title" src="assets/images/GoT_title.jpg">
-                    <span id="text-get-started"> PRESS ANY KEY TO GET STARTED</span>
+                <div class="col" id="letters-container">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col" id="letters-guessed-title">
+                    <span id="text-letters-title"> Letters Guessed</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col" id="letters-guessed">
                 </div>
             </div>
         </div>
@@ -36,8 +52,6 @@
 
 
     </body>
-
-
 
 
 
